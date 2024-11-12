@@ -1,0 +1,29 @@
+<a class="btn btn-warning" href='@Url.Action("IndexConSessionFarmacia", "Home")'>Home</a>
+<a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
+<a class="btn btn-warning" href='@Url.Action("DatosCuentaFarmacia", "Home")'>Datos Personales</a>
+<a class="btn btn-warning" href='@Url.Action("Stock", "Home")'>Tu Stock</a>
+<div class="container mt-5">
+    <h2>Editar Producto</h2>
+    <form action='@Url.Action("Editar", "Home")' method="post">
+        <input type="hidden" name="idProducto" value="@ViewBag.Producto.IdProducto" />
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-controlz" id="nombre" name="nuevoNombre" value="@ViewBag.Producto.Nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="text" class="form-control" id="precio" name="nuevoPrecio" value="@ViewBag.Producto.Precio" required>
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="text" class="form-control" id="stock" name="nuevoStock" value="@ViewBag.Producto.Stock" required>
+        </div>
+        <div class="form-group">
+            <label for="Descripcion">Descripcion</label>
+            <input type="text" class="form-control" id="Descripcion" name="nuevoDescripcion" value="@ViewBag.Producto.Descripcion" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        <a class="btn btn-warning" href='@Url.Action("Stock", "Home", new {@ViewBag.Farmacia.IdFarmacia})'>Cancelar</a>
+    </form>
+</div>
+

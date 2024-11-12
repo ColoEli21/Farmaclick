@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Datos Personales";
+}
+
+<div>
+    <h1>Datos Personales</h1>
+    <p>@ViewBag.Doctor.Nombre</p>
+    <p>@ViewBag.Doctor.Apellido</p>
+    <p>@ViewBag.Doctor.DNI</p>
+    <p>@ViewBag.Doctor.Matricula</p>
+    <p>@ViewBag.Doctor.Email</p>
+    <p>@ViewBag.Doctor.Telefono</p>
+    <a class="btn btn-warning" href='@Url.Action("IndexConSessionDoctor", "Home")'>Home</a>
+    <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
+    <a class="btn btn-warning" href='@Url.Action("DatosCuentaDoctor", "Home")'>Datos Personales</a>
+</div>

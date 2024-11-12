@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1>Index</h1>
+    <p>Estas en session como Doctor @ViewBag.Doctor.Nombre</p>
+    <a class="btn btn-warning" href='@Url.Action("IndexConSessionDoctor", "Home")'>Home</a>
+    <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
+    <a class="btn btn-warning" href='@Url.Action("DatosCuentaDoctor", "Home")'>Datos Personales</a>
+</div>

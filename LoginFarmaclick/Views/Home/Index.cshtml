@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmaclick - Inicio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 600px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-body a {
+            width: 100%;
+            text-align: center;
+        }
+        .forgot-password {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="text-center mb-4">Bienvenidos al sitio web de Farmaclick</h1>
+
+        <!-- Paciente Card -->
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Paciente</h5>
+                <a class="btn btn-primary mb-2" href="/Account/RegistrarsePaciente">Registrarse</a>
+                <a class="btn btn-secondary" href="/Account/LoginPaciente">Login</a>
+            </div>
+        </div>
+
+        <!-- Doctor Card -->
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Doctor</h5>
+                <a class="btn btn-success mb-2" href="/Account/RegistrarseDoctor">Registrarse</a>
+                <a class="btn btn-secondary" href="/Account/LoginDoctor">Login</a>
+            </div>
+        </div>
+
+        <!-- Farmacia Card -->
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Farmacia</h5>
+                <a class="btn btn-info mb-2" href="/Account/RegistrarseFarmacia">Registrarse</a>
+                <a class="btn btn-secondary" href="/Account/LoginFarmacia">Login</a>
+            </div>
+        </div>
+
+        <!-- Forgot Password -->
+        <div class="forgot-password text-center">
+            <a class="btn btn-warning" href="/Account/OlvideContraseña">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+</body>
+</html>
