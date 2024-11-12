@@ -511,11 +511,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\LoginFarmaclick\\LoginFarmaclick.csproj",
+      "projectUniqueName": "Z:\\Farmaclick\\LoginFarmaclick\\LoginFarmaclick.csproj",
       "projectName": "LoginFarmaclick",
-      "projectPath": "Z:\\LoginFarmaclick\\LoginFarmaclick.csproj",
+      "projectPath": "Z:\\Farmaclick\\LoginFarmaclick\\LoginFarmaclick.csproj",
       "packagesPath": "C:\\Users\\48387263\\.nuget\\packages\\",
-      "outputPath": "Z:\\LoginFarmaclick\\obj\\",
+      "outputPath": "Z:\\Farmaclick\\LoginFarmaclick\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -581,7 +581,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ybVf9iCq9AOS/3dNgCf6Yb5oCAtkxl+6/xLokLmiD3g=",
+  "Hash": "TUGf4xSK/jJ3rz9Ip75MszxtJW5f+JiR3vyLkKzWhK8=",
   "Source": "LoginFarmaclick",
   "BasePath": "_content/LoginFarmaclick",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LoginFarmaclick\\wwwroot",
       "Source": "LoginFarmaclick",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\css\\site.css",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\css\\site.css",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\favicon.ico",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\favicon.ico",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\js\\site.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\js\\site.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "Z:\\LoginFarmaclick\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "LoginFarmaclick",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\LoginFarmaclick\\wwwroot\\",
+      "ContentRoot": "Z:\\Farmaclick\\LoginFarmaclick\\wwwroot\\",
       "BasePath": "_content/LoginFarmaclick",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

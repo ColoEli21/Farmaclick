@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GT+A6zgvKf6i2cvntsblEVxt3bnRT81fTwxAbxPMNxWj2wvtuhFfsh3RKgsv2s2TlSBUvGUzhwwumA9XMrnrpw==",
+  "dgSpecHash": "8ysictszAjjhYo1cvEYykvodOGya/OjmQo6APOaUZUtAsQbpUxIU3OOmQsbxQ0Vg7dbX2cR2mdAMPzATxpO2fQ==",
   "success": true,
-  "projectFilePath": "Z:\\LoginFarmaclick\\LoginFarmaclick.csproj",
+  "projectFilePath": "Z:\\Farmaclick\\LoginFarmaclick\\LoginFarmaclick.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\48387263\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\48387263\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -22,8 +22,12 @@
             <label for="Descripcion">Descripcion</label>
             <input type="text" class="form-control" id="Descripcion" name="nuevoDescripcion" value="@ViewBag.Producto.Descripcion" required>
         </div>
+        <div class="form-group">
+            <label for="NoEditable">Farmacia</label>
+            <input type="text" class="form-control" id="NoEditable" name="NoEditable" value="@ViewBag.Farmacia.Nombre" readonly>
+        </div>
         <button type="submit" class="btn btn-primary">Guardar cambios</button>
-        <a class="btn btn-warning" href='@Url.Action("Stock", "Home", new {@ViewBag.Farmacia.IdFarmacia})'>Cancelar</a>
+        <a class="btn btn-warning" href='@Url.Action("Stock", "Home")'>Cancelar</a>
     </form>
 </div>
 

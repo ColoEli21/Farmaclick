@@ -208,3 +208,85 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* Estilo para las tarjetas de producto */
+.card {
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    overflow: hidden; /* Evita que los elementos se desborden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tarjeta */
+    transition: transform 0.2s ease-in-out; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse por encima de la tarjeta */
+.card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+}
+
+/* Imagen dentro de la tarjeta (si se agrega una imagen) */
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen ocupe todo el espacio sin deformarse */
+    width: 100%;
+}
+
+/* Ajuste del cuerpo de la tarjeta */
+.card-body {
+    padding: 15px;
+    text-align: center; /* Centra el contenido dentro de la tarjeta */
+}
+
+/* Títulos y textos dentro de la tarjeta */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Botones dentro de la tarjeta */
+.card-body .btn {
+    width: 48%; /* Hacer los botones más pequeños */
+    margin: 5px 0;
+}
+
+/* Columna de productos: crear un espaciado entre ellos */
+.col-md-4 {
+    padding: 0 15px; /* Espaciado entre las columnas */
+}
+
+/* Alineación de los botones de acción (editar, eliminar) */
+.card-body .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Ajuste para el contenedor de productos */
+.container {
+    margin-top: 30px;
+}
+
+/* Alineación de los botones principales */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Alineación de los botones de 'Agregar Producto' */
+.mt-4.text-center a {
+    margin-top: 20px;
+}
+
+/* Estilo del mensaje cuando no hay productos */
+.alert-info {
+    font-size: 1.1rem;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}

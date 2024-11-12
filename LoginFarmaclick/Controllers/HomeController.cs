@@ -91,26 +91,42 @@ public class HomeController : Controller
         ViewBag.Farmacia = usu;
         return View();
     }
-    public IActionResult EliminarProducto(string IdProducto)
+    public IActionResult EliminarProducto(int IdProducto)
     {
+        Farmacia farmacia = Farmacia.FromString(HttpContext.Session.GetString("user"));
         BD.EliminarProducto(IdProducto);
-        return View("IndexConSessionFarmacia");
+        return RedirectToAction("Stock", "Home");
     }
-    public IActionResult EditarProducto(string IdProducto)
+    public IActionResult EditarProducto()
     {
-        return View("");
+        Farmacia usu = Farmacia.FromString(HttpContext.Session.GetString("user"));
+        if (usu== null)
+        {  
+            return RedirectToAction("Index","Home");
+        }
+        ViewBag.Farmacia = usu;
+        return View();
     }
-    public IActionResult Editar(string idProducto, string nuevoNombre, string nuevoPrecio, string nuevoStock, string nuevoDescripcion)
+    public IActionResult Editar(Producto usu)
     {
-        return View("IndexConSessionFarmacia");
+        Farmacia farmacia = Farmacia.FromString(HttpContext.Session.GetString("user"));
+        BD.EditarProducto(usu, farmacia.IdFarmacia);
+        return RedirectToAction("IndexConSessionFarmacia");
     }   
-    public IActionResult AgregarProducto(string IdFarmacia)
+    public IActionResult AgregarProducto()
     {
-        return View("");
+        Farmacia usu = Farmacia.FromString(HttpContext.Session.GetString("user"));
+        if (usu== null)
+        {  
+            return RedirectToAction("Index","Home");
+        }
+        ViewBag.Farmacia = usu;
+        return View();
     }
-    public IActionResult GuardarProducto(Producto usu, string IdFarmacia)
+    public IActionResult GuardarProducto(Producto usu)
     {
-        BD.AgregarProducto(usu, IdFarmacia);
+        Farmacia farmacia = Farmacia.FromString(HttpContext.Session.GetString("user"));
+        BD.AgregarProducto(usu, farmacia.IdFarmacia);
         return RedirectToAction("Stock");
     }
 }

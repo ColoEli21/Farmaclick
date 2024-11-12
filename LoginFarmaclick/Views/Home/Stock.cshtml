@@ -3,32 +3,40 @@
 <a class="btn btn-warning" href='@Url.Action("DatosCuentaFarmacia", "Home")'>Datos Personales</a>
 <a class="btn btn-warning" href='@Url.Action("Stock", "Home")'>Tu Stock</a>
 
+
 <div class="container">
+    <div class="mt-4 text-center">
+        <a class="btn btn-warning" href='@Url.Action("AgregarProducto", "Home", new {@ViewBag.IdFarmacia})'>Agregar</a>
+    </div>
     <div class="row">
         @if (ViewBag.Productos == null) 
         {
             <div class="col-md-12">
-                <p>No hay productos disponibles. Por favor, agregue algunos productos.</p>
+                <div class="alert alert-info" role="alert">
+                    No hay productos disponibles. Por favor, agregue algunos productos.
+                </div>
             </div>
         }
         else
         {
             @foreach (var Producto in ViewBag.Productos) 
             {
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">@Producto.Nombre</h5>
                             <h5 class="card-title">@Producto.Descripcion</h5>
                             <p class="card-text"><strong>Precio:</strong> @Producto.Precio</p>
                             <p class="card-text"><strong>Stock:</strong> @Producto.Stock</p>
-                            <a class="btn btn-warning" href='@Url.Action("EditarProducto", "Home", new {@Producto.IdProducto})'>Editar</a>
-                            <a class="btn btn-warning" href='@Url.Action("EliminarProducto", "Home", new {@Producto.IdProducto})'>Eliminar</a>
+                            <div class="btn-group">
+                                <a class="btn btn-warning" href='@Url.Action("EditarProducto", "Home", new {@Producto.IdProducto})'>Editar</a>
+                                <a class="btn btn-warning" href='@Url.Action("EliminarProducto", "Home", new {@Producto.IdProducto})'>Eliminar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             }
         }
     </div>
-    <a class="btn btn-warning" href='@Url.Action("AgregarProducto", "Home", new {@ViewBag.IdFarmacia})'>Agregar</a>
+    
 </div>

@@ -90,78 +90,7 @@ public static class BD
         }
     }
 
-    public static Paciente BuscarPaciente(string DNI)
-    {
-        using (SqlConnection conn = new SqlConnection(_ConnectionString))
-        {
-            conn.Open();
-
-            // Consulta para verificar el usuario
-            string sql = "SELECT * FROM Pacientes WHERE DNI = @pDNI";
-            
-            var usuario = conn.QuerySingleOrDefault<Paciente>(sql, new { pDNI = DNI});
-
-            if (usuario == null)
-            {
-                throw new Exception("DNI incorrecto.");
-            }
-
-            return usuario; // Devuelve el objeto Usuario si las credenciales son correctas
-        }
-    }
-    public static Doctor BuscarDoctor(string DNI)
-    {
-        using (SqlConnection conn = new SqlConnection(_ConnectionString))
-        {
-            conn.Open();
-
-            // Consulta para verificar el usuario
-            string sql = "SELECT * FROM Doctores WHERE DNI = @pDNI";
-            
-            var usuario = conn.QuerySingleOrDefault<Doctor>(sql, new { pDNI = DNI});
-
-            if (usuario == null)
-            {
-                throw new Exception("DNI incorrecto.");
-            }
-
-            return usuario; // Devuelve el objeto Usuario si las credenciales son correctas
-        }
-    }
-    public static Farmacia BuscarFarmacia(string TituloPropiedad)
-    {
-        using (SqlConnection conn = new SqlConnection(_ConnectionString))
-        {
-            conn.Open();
-
-            // Consulta para verificar el usuario
-            string sql = "SELECT * FROM Farmacias WHERE TituloPropiedad = @pTituloPropiedad";
-            
-            var usuario = conn.QuerySingleOrDefault<Farmacia>(sql, new { pTituloPropiedad = TituloPropiedad});
-
-            if (usuario == null)
-            {
-                throw new Exception("TituloPropiedad incorrecto.");
-            }
-
-            return usuario; // Devuelve el objeto Usuario si las credenciales son correctas
-        }
-    }
-    public static int BuscarIdFarmacia(string TituloPropiedad)
-    {
-        using (SqlConnection conn = new SqlConnection(_ConnectionString))
-        {
-            conn.Open();
-
-            // Consulta para verificar el usuario
-            string sql = "SELECT IdFarmacia FROM Farmacias WHERE TituloPropiedad = @pTituloPropiedad";
-            
-            var usuario = conn.QuerySingleOrDefault<int>(sql, new { pTituloPropiedad = TituloPropiedad});
-
-            return usuario; // Devuelve el objeto Usuario si las credenciales son correctas
-        }
-    }
-
+    
     public static Paciente IniciarSesionPaciente(string email, string contraseña)
     {
         using (SqlConnection conn = new SqlConnection(_ConnectionString))
@@ -228,26 +157,7 @@ public static class BD
             return productos; // Devolvemos la lista de productos
         }
     }
-    public static Producto BuscarProducto(string IdProducto)
-    {
-        using (SqlConnection conn = new SqlConnection(_ConnectionString))
-        {
-            conn.Open();
-
-            // Consulta para verificar el usuario
-            string sql = "SELECT * FROM Productos WHERE IdProducto = @pIdProducto";
-            
-            Producto usuario = conn.QuerySingleOrDefault<Producto>(sql, new { pIdProducto = IdProducto});
-
-            if (usuario == null)
-            {
-                throw new Exception("IdProducto incorrecto.");
-            }
-
-            return usuario; // Devuelve el objeto Usuario si las credenciales son correctas
-        }
-    }
-    public static void EliminarProducto(string IdProducto)
+    public static void EliminarProducto(int IdProducto)
     {
         using (SqlConnection conn = new SqlConnection(_ConnectionString))
         {
@@ -258,13 +168,9 @@ public static class BD
             
             var usuario = conn.QuerySingleOrDefault<Doctor>(sql, new { pIdProducto = IdProducto});
 
-            if (usuario == null)
-            {
-                throw new Exception("IdProducto incorrecto.");
-            }
         }
     }
-    public static void EditarProducto(int idProducto, string nuevoNombre, string nuevoPrecio, string nuevoStock)
+    public static void EditarProducto(Producto usu, int IdFarmacia)
     {
         using (SqlConnection conn = new SqlConnection(_ConnectionString))
         {
@@ -278,19 +184,16 @@ public static class BD
 
             int rowsAffected = conn.Execute(sql, new 
             { 
-                pNombre = nuevoNombre,
-                pPrecio = nuevoPrecio,
-                pStock = nuevoStock,
-                pIdProducto = idProducto 
+                pNombre = usu.Nombre, 
+                pPrecio = usu.Precio, 
+                pStock = usu.Stock, 
+                pDescripcion = usu.Descripcion, 
+                pIdFarmacia = IdFarmacia
             });
 
-            if (rowsAffected == 0)
-            {
-                throw new Exception("No se encontró el producto o no se pudo actualizar.");
-            }
         }
     }
-    public static void AgregarProducto(Producto usu, string IdFarmacia)
+    public static void AgregarProducto(Producto usu, int IdFarmacia)
     {
         using (SqlConnection conn = new SqlConnection(_ConnectionString))
         {
@@ -298,7 +201,7 @@ public static class BD
 
             // Verificar si el Paciente ya existe
             string checkSql = "SELECT COUNT(*) FROM Productos WHERE Nombre = @pNombre";
-            int count = conn.ExecuteScalar<int>(checkSql, new { pNombre = usu.Nombre});
+            int count = conn.Execute(checkSql, new { pNombre = usu.Nombre});
 
             if (count > 0)
             {
@@ -306,8 +209,8 @@ public static class BD
             }
 
             // Si el Paciente no existe, registrar
-            string sql = "INSERT INTO Pacientes (Nombre, Precio, Stock, Descripcion, IdFarmacia) VALUES (@pNombre, @pPrecio, @pStock, @pDescripcion, @pIdFarmacia); SELECT CAST(scope_identity() AS int);";
-            conn.ExecuteScalar<int>(sql, new { 
+            string sql = "INSERT INTO Productos (Nombre, Precio, Stock, Descripcion, IdFarmacia) VALUES (@pNombre, @pPrecio, @pStock, @pDescripcion, @pIdFarmacia); SELECT CAST(scope_identity() AS int);";
+            conn.Execute(sql, new { 
                 pNombre = usu.Nombre, 
                 pPrecio = usu.Precio, 
                 pStock = usu.Stock, 
