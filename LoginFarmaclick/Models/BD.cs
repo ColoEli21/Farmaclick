@@ -219,4 +219,22 @@ public static class BD
             });
         }
     }
+    public static List<Producto> Buscar(string query)
+    {
+        using (SqlConnection conn = new SqlConnection(_ConnectionString))
+        {
+            conn.Open();
+
+            // Consulta para obtener los productos relacionados con la IdFarmacia y cuyo nombre coincida con el término de búsqueda
+            string sql = "SELECT * FROM Productos WHERE Nombre LIKE @pQuery";
+
+            // Ejecutar la consulta usando Dapper
+            List<Producto> productos = conn.Query<Producto>(sql, new 
+            { 
+                pQuery = "%" + query + "%" // Los signos % permiten la búsqueda parcial (LIKE)
+            }).ToList();
+
+            return productos; // Devolvemos la lista de productos que coinciden
+        }
+    }
 }

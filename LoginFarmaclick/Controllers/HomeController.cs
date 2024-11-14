@@ -129,4 +129,20 @@ public class HomeController : Controller
         BD.AgregarProducto(usu, farmacia.IdFarmacia);
         return RedirectToAction("Stock");
     }
+    [HttpGet]
+    public List<Producto> ResultadosBusqueda(string query)
+    {
+       return BD.Buscar(query);
+        
+    }
+    public IActionResult Pedidos()
+    {
+        Paciente usu = Paciente.FromString(HttpContext.Session.GetString("user"));
+        if (usu== null)
+        {  
+            return RedirectToAction("Index","Home");
+        }
+        ViewBag.Paciente = usu;
+        return View();
+    }
 }

@@ -243,3 +243,35 @@ body {
 .mt-4.text-center a:hover {
     color: #014f7d;
 }
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.card-title {
+    color: #007bff; /* Color del título */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 18rem;
+    margin: 10px;
+}
