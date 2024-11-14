@@ -272,7 +272,21 @@ public static class BD
             conn.Open();
 
             // Consulta para obtener los Pedidos relacionados con la IdPaciente
-            string sql = "SELECT * FROM Pedidos WHERE IdPaciente = @pIdPaciente";
+            string sql = "SELECT P.*, Pr.Nombre as NombreProducto, F.Nombre as NombreFarmacia FROM Pedidos P INNER JOIN Productos Pr ON P.IdProducto=Pr.IdProducto INNER JOIN Farmacias F ON P.IdFarmacia=F.IdFarmacia WHERE P.IdPaciente = @pIdPaciente";
+            
+            List<Pedido> Pedidos = conn.Query<Pedido>(sql, new { pIdPaciente = IdPaciente }).ToList();
+
+            return Pedidos; // Devolvemos la lista de Pedidos
+        }
+    }
+    public static List<Pedido> BuscarPedidosFarmacia(int IdPaciente)
+    {
+        using (SqlConnection conn = new SqlConnection(_ConnectionString))
+        {
+            conn.Open();
+
+            // Consulta para obtener los Pedidos relacionados con la IdPaciente
+            string sql = "SELECT P.*, Pr.Nombre as NombreProducto, F.Nombre as NombrePaciente FROM Pedidos P INNER JOIN Productos Pr ON P.IdProducto=Pr.IdProducto INNER JOIN Pacientes F ON P.IdPaciente=F.IdPaciente WHERE P.IdPaciente = @pIdPaciente";
             
             List<Pedido> Pedidos = conn.Query<Pedido>(sql, new { pIdPaciente = IdPaciente }).ToList();
 

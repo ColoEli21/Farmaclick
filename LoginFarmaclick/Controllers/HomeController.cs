@@ -143,8 +143,6 @@ public class HomeController : Controller
         }
         List<Pedido> Pedidos = BD.BuscarPedidos(usu.IdPaciente);
         ViewBag.Pedidos = Pedidos;
-        ViewBag.Producto = BD.BuscarProducto(usu.IdProducto)
-        ViewBag.Farmacia = BD.BuscarFarmacia(usu.IdFarmacia)
         ViewBag.Paciente = usu;
         return View();
     }
@@ -155,9 +153,26 @@ public class HomeController : Controller
         {  
             return RedirectToAction("Index","Home");
         }
-        List<Pedido> Pedidos = BD.BuscarPedidos(usu.IdFarmacia);
+        List<Pedido> Pedidos = BD.BuscarPedidosFarmacia(usu.IdFarmacia);
         ViewBag.Pedidos = Pedidos;
         ViewBag.Farmacia = usu;
+        return View();
+    }
+    public IActionResult NotificacionesFarmacia(){
+        Farmacia usu = Farmacia.FromString(HttpContext.Session.GetString("user"));
+        if (usu== null)
+        {  
+            return RedirectToAction("Index","Home");
+        }
+        ViewBag.Farmacia = usu;
+        return View();
+    }
+    public IActionResult Comprar(){
+        Paciente usu = Paciente.FromString(HttpContext.Session.GetString("user"));
+        if (usu== null)
+        {  
+            return RedirectToAction("Index","Home");
+        }
         return View();
     }
 }

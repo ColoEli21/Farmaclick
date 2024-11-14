@@ -19,3 +19,4 @@ function validarFormulario() {
     alert('Email y contraseña son válidos, continúa con el envío del formulario');
     return true;
 }
+

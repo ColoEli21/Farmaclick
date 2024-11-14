@@ -4,68 +4,9 @@
 <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
 <a class="btn btn-warning" href='@Url.Action("DatosCuentaPaciente", "Home")'>Datos Personales</a>
 <a class="btn btn-warning" href='@Url.Action("PedidosPaciente", "Home")'>Tu Pedidos</a>
-<!-- Barra de búsqueda -->
-<div class="search-container">
-    <input type="text" id="searchInput" class="form-control" placeholder="Busca algún producto">
-    <button class="btn btn-primary mt-2" onclick="search()">Buscar</button>
-</div>
-<!-- Contenedor de resultados -->
-<div class="result" id="result"></div>
-
-<!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
-    <script>
-        // Función para realizar la búsqueda
-        function search() {
-            var searchTerm = document.getElementById('searchInput').value;
-            var resultDiv = $('#result');
-
-            if (searchTerm) {
-                // Realizar la solicitud AJAX
-                $.ajax({
-                    url: '@Url.Action("ResultadosBusqueda", "Home")',  // Acción en el controlador
-                    type: 'GET',
-                    data: { query: searchTerm },  // Enviar el término de búsqueda
-                    success: function(response) {
-                        // Limpiar el contenedor de resultados antes de agregar nuevos productos
-                        resultDiv.empty();
-
-                        if (response.length === 0) {
-                            resultDiv.append('<p>No se encontraron productos para tu búsqueda.</p>');
-                        } else {
-                            // Recorrer los productos y crear una card para cada uno
-                            response.forEach((producto) => {
-                                const productoCard = $(`
-                                    <div class="card product-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">${producto.nombre}</h5>
-                                            <p class="card-text"><strong>Precio:</strong> $${producto.precio}</p>
-                                            <p class="card-text"><strong>Stock:</strong> ${producto.stock}</p>
-                                            <p class="card-text"><strong>Descripción:</strong> ${producto.descripcion}</p>
-                                            <p class="card-text"><strong>ID Farmacia:</strong> ${producto.idFarmacia}</p>
-                                            <p class="card-text"><strong>ID Producto:</strong> ${producto.idProducto}</p>
-                                        </div>
-                                    </div>
-                                `);
-
-                                // Insertar la card en el contenedor de resultados
-                                resultDiv.append(productoCard);
-                            });
-                        }
-                    },
-                    error: function() {
-                        resultDiv.html('<p>Ocurrió un error al realizar la búsqueda.</p>');
-                    }
-                });
-            } else {
-                resultDiv.html('<p>Por favor ingresa un término de búsqueda.</p>');
-            }
-        }
-    </script>
-    </div>
     <div class="row">
-        @if (ViewBag.Productos == null) 
+        @if (ViewBag.Pedidos == null) 
         {
             <div class="col-md-12">
                 <div class="alert alert-info" role="alert">
@@ -80,10 +21,10 @@
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">@Producto.Nombre</h5>
-                            <h5 class="card-title">@Pedido.Direccion</h5>
-                            <p class="card-text"><strong>Precio:</strong> @Pedido.Fecha</p>
-                            <p class="card-text"><strong>Stock:</strong> @Farmacia.Nombre</p>
+                            <h5 class="card-title">Producto: @Pedido.NombreProducto</h5>
+                            <h5 class="card-title">Farmacia: @Pedido.NombreFarmacia</h5>
+                            <h5 class="card-title">Direccion: @Pedido.Direccion</h5>
+                            <h5 class="card-text"><strong>Fecha:</strong> @Pedido.Fecha</h5>
                         </div>
                     </div>
                 </div>
