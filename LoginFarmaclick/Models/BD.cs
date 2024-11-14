@@ -157,6 +157,34 @@ public static class BD
             return productos; // Devolvemos la lista de productos
         }
     }
+    public static Producto BuscarProducto(int IdProducto)
+    {
+        using (SqlConnection conn = new SqlConnection(_ConnectionString))
+        {
+            conn.Open();
+
+            // Consulta para obtener los productos relacionados con la IdProducto
+            string sql = "SELECT * FROM Productos WHERE IdProducto = @pIdProducto";
+            
+            Producto productos = conn.QuerySingleOrDefault<Producto>(sql, new { pIdProducto = IdProducto });
+
+            return productos; // Devolvemos la lista de productos
+        }
+    }
+    public static Farmacia BuscarFarmacia(int IdFarmacia)
+    {
+        using (SqlConnection conn = new SqlConnection(_ConnectionString))
+        {
+            conn.Open();
+
+            // Consulta para obtener los Farmacias relacionados con la IdFarmacia
+            string sql = "SELECT * FROM Farmacias WHERE IdFarmacia = @pIdFarmacia";
+            
+            Farmacia Farmacias = conn.QuerySingleOrDefault<Farmacia>(sql, new { pIdFarmacia = IdFarmacia });
+
+            return Farmacias; // Devolvemos la lista de productos
+        }
+    }
     public static void EliminarProducto(int IdProducto)
     {
         using (SqlConnection conn = new SqlConnection(_ConnectionString))
@@ -235,6 +263,20 @@ public static class BD
             }).ToList();
 
             return productos; // Devolvemos la lista de productos que coinciden
+        }
+    }
+    public static List<Pedido> BuscarPedidos(int IdPaciente)
+    {
+        using (SqlConnection conn = new SqlConnection(_ConnectionString))
+        {
+            conn.Open();
+
+            // Consulta para obtener los Pedidos relacionados con la IdPaciente
+            string sql = "SELECT * FROM Pedidos WHERE IdPaciente = @pIdPaciente";
+            
+            List<Pedido> Pedidos = conn.Query<Pedido>(sql, new { pIdPaciente = IdPaciente }).ToList();
+
+            return Pedidos; // Devolvemos la lista de Pedidos
         }
     }
 }

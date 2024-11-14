@@ -4,13 +4,14 @@
 
 <div>
     <h1>Datos Personales</h1>
-    <p>@ViewBag.Farmacia.Nombre</p>
-    <p>@ViewBag.Farmacia.TituloPropiedad</p>
-    <p>@ViewBag.Farmacia.Direccion</p>
-    <p>@ViewBag.Farmacia.Email</p>
-    <p>@ViewBag.Farmacia.Telefono</p>
+    <p>Nombre: @ViewBag.Farmacia.Nombre</p>
+    <p>Titulo de propiedad: @ViewBag.Farmacia.TituloPropiedad</p>
+    <p>Direccion: @ViewBag.Farmacia.Direccion</p>
+    <p>Email: @ViewBag.Farmacia.Email</p>
+    <p>Telefono: @ViewBag.Farmacia.Telefono</p>
     <a class="btn btn-warning" href='@Url.Action("IndexConSessionFarmacia", "Home")'>Home</a>
     <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
     <a class="btn btn-warning" href='@Url.Action("DatosCuentaFarmacia", "Home")'>Datos Personales</a>
     <a class="btn btn-warning" href='@Url.Action("Stock", "Home")'>Tu Stock</a>
+    <a class="btn btn-warning" href='@Url.Action("PedidosFarmacia", "Home")'>Tu Pedidos</a>
 </div>

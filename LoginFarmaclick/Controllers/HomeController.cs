@@ -81,7 +81,6 @@ public class HomeController : Controller
     public IActionResult Stock()
     {
         Farmacia usu = Farmacia.FromString(HttpContext.Session.GetString("user"));
-   
         if (usu== null)
         {  
             return RedirectToAction("Index","Home");
@@ -135,14 +134,30 @@ public class HomeController : Controller
        return BD.Buscar(query);
         
     }
-    public IActionResult Pedidos()
+    public IActionResult PedidosPaciente()
     {
         Paciente usu = Paciente.FromString(HttpContext.Session.GetString("user"));
         if (usu== null)
         {  
             return RedirectToAction("Index","Home");
         }
+        List<Pedido> Pedidos = BD.BuscarPedidos(usu.IdPaciente);
+        ViewBag.Pedidos = Pedidos;
+        ViewBag.Producto = BD.BuscarProducto(usu.IdProducto)
+        ViewBag.Farmacia = BD.BuscarFarmacia(usu.IdFarmacia)
         ViewBag.Paciente = usu;
+        return View();
+    }
+    public IActionResult PedidosFarmacia()
+    {
+        Farmacia usu = Farmacia.FromString(HttpContext.Session.GetString("user"));
+        if (usu== null)
+        {  
+            return RedirectToAction("Index","Home");
+        }
+        List<Pedido> Pedidos = BD.BuscarPedidos(usu.IdFarmacia);
+        ViewBag.Pedidos = Pedidos;
+        ViewBag.Farmacia = usu;
         return View();
     }
 }

@@ -3,7 +3,7 @@
     <a class="btn btn-warning" href='@Url.Action("IndexConSessionPaciente", "Home")'>Home</a>
 <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
 <a class="btn btn-warning" href='@Url.Action("DatosCuentaPaciente", "Home")'>Datos Personales</a>
-<a class="btn btn-warning" href='@Url.Action("Pedidos", "Home")'>Tu Pedidos</a>
+<a class="btn btn-warning" href='@Url.Action("PedidosPaciente", "Home")'>Tu Pedidos</a>
 <!-- Barra de búsqueda -->
 <div class="search-container">
     <input type="text" id="searchInput" class="form-control" placeholder="Busca algún producto">
@@ -63,4 +63,30 @@
             }
         }
     </script>
+    </div>
+    <div class="row">
+        @if (ViewBag.Productos == null) 
+        {
+            <div class="col-md-12">
+                <div class="alert alert-info" role="alert">
+                    No hay Pedidos realizados.
+                </div>
+            </div>
+        }
+        else
+        {
+            @foreach (var Pedido in ViewBag.Pedidos) 
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@Producto.Nombre</h5>
+                            <h5 class="card-title">@Pedido.Direccion</h5>
+                            <p class="card-text"><strong>Precio:</strong> @Pedido.Fecha</p>
+                            <p class="card-text"><strong>Stock:</strong> @Farmacia.Nombre</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
     </div>
