@@ -21,20 +21,22 @@
         {
             @foreach (var Producto in ViewBag.Productos) 
             {
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">@Producto.Nombre</h5>
-                            <h5 class="card-title">@Producto.Descripcion</h5>
-                            <p class="card-text"><strong>Precio:</strong> @Producto.Precio</p>
-                            <p class="card-text"><strong>Stock:</strong> @Producto.Stock</p>
-                            <div class="btn-group">
-                                <a class="btn btn-warning" href='@Url.Action("EditarProducto", "Home", new {@Producto.IdProducto})'>Editar</a>
-                                <a class="btn btn-warning" href='@Url.Action("EliminarProducto", "Home", new {@Producto.IdProducto})'>Eliminar</a>
+                @if(Producto.Count > 0){
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">@Producto.Nombre</h5>
+                                <h5 class="card-title">@Producto.Descripcion</h5>
+                                <p class="card-text"><strong>Precio:</strong> @Producto.Precio</p>
+                                <p class="card-text"><strong>Stock:</strong> @Producto.Stock</p>
+                                <div class="btn-group">
+                                    <a class="btn btn-warning" href='@Url.Action("EditarProducto", "Home", new {@Producto.IdProducto})'>Editar</a>
+                                    <a class="btn btn-warning" href='@Url.Action("EliminarProducto", "Home", new {@Producto.IdProducto})'>Eliminar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
             }
         }
     </div>

@@ -9,109 +9,115 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginFarmaclick
 build_property.RootNamespace = LoginFarmaclick
-build_property.ProjectDir = C:\Users\48387263\Downloads\Farmaclick\LoginFarmaclick\
+build_property.ProjectDir = Z:\Farmaclick\LoginFarmaclick\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\48387263\Downloads\Farmaclick\LoginFarmaclick
+build_property.MSBuildProjectDirectory = Z:\Farmaclick\LoginFarmaclick
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/Bienvenido.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/Bienvenido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxCaWVudmVuaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/LoginDoctor.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/LoginDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbkRvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/LoginFarmacia.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/LoginFarmacia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbkZhcm1hY2lhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/LoginPaciente.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/LoginPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpblBhY2llbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/OlvideContraseña.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/OlvideContraseña.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPbHZpZGVDb250cmFzZcOxYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/RegistrarseDoctor.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/RegistrarseDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXJzZURvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/RegistrarseFarmacia.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/RegistrarseFarmacia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXJzZUZhcm1hY2lhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Account/RegistrarsePaciente.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Account/RegistrarsePaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXJzZVBhY2llbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/AgregarProducto.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/AgregarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ3JlZ2FyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/DatosCuentaDoctor.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/Comprar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wcmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/DatosCuentaDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRvc0N1ZW50YURvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/DatosCuentaFarmacia.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/DatosCuentaFarmacia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRvc0N1ZW50YUZhcm1hY2lhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/DatosCuentaPaciente.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/DatosCuentaPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRvc0N1ZW50YVBhY2llbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/EditarProducto.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/EditarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXJQcm9kdWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/Index.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/IndexConSessionDoctor.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/IndexConSessionDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleENvblNlc3Npb25Eb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/IndexConSessionFarmacia.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/IndexConSessionFarmacia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleENvblNlc3Npb25GYXJtYWNpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/IndexConSessionPaciente.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/IndexConSessionPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleENvblNlc3Npb25QYWNpZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/NotificacionesFarmacia.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/NotificacionesFarmacia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RpZmljYWNpb25lc0Zhcm1hY2lhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/PedidosFarmacia.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/PedidosFarmacia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG9zRmFybWFjaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/PedidosPaciente.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/PedidosPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG9zUGFjaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Home/Stock.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Home/Stock.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdG9jay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Shared/_Layout.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/Shared/_ValidationScriptsPartial.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/_ViewImports.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/48387263/Downloads/Farmaclick/LoginFarmaclick/Views/_ViewStart.cshtml]
+[Z:/Farmaclick/LoginFarmaclick/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

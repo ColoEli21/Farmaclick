@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Index</h1>
-        <p>Estas en sesión como Paciente de @ViewBag.Paciente.Nombre</p>
+        <p>Estas en sesión como Paciente deeeee @ViewBag.Paciente.Nombre</p>
         <a class="btn btn-warning" href='@Url.Action("IndexConSessionPaciente", "Home")'>Home</a>
         <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
         <a class="btn btn-warning" href='@Url.Action("DatosCuentaPaciente", "Home")'>Datos Personales</a>
@@ -57,7 +57,7 @@
                                             <p class="card-text"><strong>Precio:</strong> $${producto.precio}</p>
                                             <p class="card-text"><strong>Stock:</strong> ${producto.stock}</p>
                                             <p class="card-text"><strong>Descripción:</strong> ${producto.descripcion}</p>
-                                            <a class="btn btn-warning" href='@Url.Action("Comprar", "Home")'>Comprar</a>
+                                            <a class="btn btn-warning" href='@Url.Action("ComprarProducto", "Home")?id=${producto.id}'>Comprar</a>
                                         </div>
                                     </div>
                                 `);

@@ -1,0 +1,41 @@
+<div class="container">
+    <h1>Index</h1>
+    <p>Estas en sesión como Paciente deeeee @ViewBag.Paciente.Nombre</p>
+    <a class="btn btn-warning" href='@Url.Action("IndexConSessionPaciente", "Home")'>Home</a>
+    <a class="btn btn-warning" href='@Url.Action("Logout", "Account")'>Log Out</a>
+    <a class="btn btn-warning" href='@Url.Action("DatosCuentaPaciente", "Home")'>Datos Personales</a>
+    <a class="btn btn-warning" href='@Url.Action("PedidosPaciente", "Home")'>Tus Pedidos</a>
+</div>
+
+<div class="container mt-5">
+    <h2>Comprar producto</h2>
+    <form action='@Url.Action("Comprar", "Home")' method="post">
+        <input type="hidden" name="idProducto" value="@ViewBag.Producto.IdProducto" />
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-controlz" id="nombre" name="nuevoNombre" value="@ViewBag.Producto.Nombre" readonly>
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="text" class="form-control" id="precio" name="nuevoPrecio" value="@ViewBag.Producto.Precio" readonly>
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="text" class="form-control" id="stock" name="nuevoStock" value="@ViewBag.Producto.Stock" readonly>
+        </div>
+        <div class="form-group">
+            <label for="Descripcion">Descripcion</label>
+            <input type="text" class="form-control" id="Descripcion" name="nuevoDescripcion" value="@ViewBag.Producto.Descripcion" readonly>
+        </div>
+        <div class="form-group">
+            <label for="NoEditable">Farmacia</label>
+            <input type="text" class="form-control" id="NoEditable" name="NoEditable" value="@ViewBag.Farmacia.Nombre" readonly>
+        </div>
+        <div class="form-group">
+            <label for="Direccion">Direccion a entregar</label>
+            <input type="text" class="form-control" id="Direccion" name="Direccion" value="" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Comprar</button>
+        <a class="btn btn-warning" href='@Url.Action("Stock", "Home")'>Cancelar</a>
+    </form>
+</div>

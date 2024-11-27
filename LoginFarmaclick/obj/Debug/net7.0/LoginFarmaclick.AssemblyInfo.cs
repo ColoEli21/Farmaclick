@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginFarmaclick")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a019ef89703990461538a6de812c5dc2dc34d028")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginFarmaclick")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginFarmaclick")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

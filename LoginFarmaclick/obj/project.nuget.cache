@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPB0FDuvJonPz1WWuG8rhFUsOjTPz4cRSirV0ymj8NsoeJm7IQmzynkjaauDWnoQYVTGZitJ7vO0Moo6eqJTOg==",
+  "dgSpecHash": "JJwajKqf3+E+Kyxtn5NOvJYts1HIQG3PEjuJJU9yDGnbQqXEaOsLYApeXgwm1phDYqzQASd4vtyaAnAvjIl4BA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\48387263\\Downloads\\Farmaclick\\LoginFarmaclick\\LoginFarmaclick.csproj",
+  "projectFilePath": "Z:\\Farmaclick\\LoginFarmaclick\\LoginFarmaclick.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\48387263\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\48387263\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
@@ -13,7 +13,11 @@
     "C:\\Users\\48387263\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\48387263\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
     "C:\\Users\\48387263\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\48387263\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+    "C:\\Users\\48387263\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\48387263\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\48387263\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\48387263\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\48387263\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
   ],
   "logs": []
 }

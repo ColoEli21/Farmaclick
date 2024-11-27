@@ -210,7 +210,7 @@ public static class BD
                 SET Nombre = @pNombre, Precio = @pPrecio, Stock = @pStock
                 WHERE IdProducto = @pIdProducto";
 
-            int rowsAffected = conn.Execute(sql, new 
+            conn.Execute(sql, new 
             { 
                 pNombre = usu.Nombre, 
                 pPrecio = usu.Precio, 
@@ -291,6 +291,23 @@ public static class BD
             List<Pedido> Pedidos = conn.Query<Pedido>(sql, new { pIdPaciente = IdPaciente }).ToList();
 
             return Pedidos; // Devolvemos la lista de Pedidos
+        }
+    }
+    public static void AgregarPedido(Producto usu, int IdPaciente, string Direccion)
+    {
+        using (SqlConnection conn = new SqlConnection(_ConnectionString))
+        {
+            conn.Open();
+
+            // Si el Paciente no existe, registrar
+            string sql = "INSERT INTO Pedidos (IdProducto, IdFarmacia, Fecha, Direccion, IdPaciente) VALUES (@pIdProducto, @pIdFarmacia, @pFecha, @pDireccion, @pIdPaciente); SELECT CAST(scope_identity() AS int);";
+            conn.Execute(sql, new { 
+                pIdProducto = usu.IdProducto, 
+                pIdFarmacia = usu.IdFarmacia, 
+                pFecha = DateTime.Now, 
+                pDireccion = Direccion, 
+                pIdPaciente = IdPaciente
+            });
         }
     }
 }

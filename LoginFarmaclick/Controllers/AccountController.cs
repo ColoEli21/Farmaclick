@@ -25,7 +25,6 @@ public class AccountController : Controller
         {
             HttpContext.Session.SetString("user", usu.ToString());
             return RedirectToAction("IndexConSessionPaciente", "Home");
-
         }
     }
     public IActionResult DatosLoginDoctor(string email, string contraseña)
